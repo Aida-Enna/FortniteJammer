@@ -5,7 +5,7 @@ using SharpDX.XInput;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace FortniteMapper
+namespace FortniteJammer
 {
     internal class Program
     {
@@ -68,39 +68,7 @@ namespace FortniteMapper
 
         static public void loop_Tick(object sender, EventArgs e)
         {
-            //if (!enabledcb.Checked)
-            //{
-            //    return;
-            //}
-            //
             stateNew = controller.GetState();
-            ///////////////////////////////////
-            //x = stateNew.Gamepad.RightThumbX;
-            //y = stateNew.Gamepad.RightThumbY;
-
-            //x /= 1000;
-            //y /= 1000;
-            ////////////////////////////////
-            //int movementX = x;
-            //int movementY = y;
-
-            //movementX *= 1; //(int)sensnud.Value;
-            //movementY *= 1; //(int)sensnud.Value;
-
-            //movementX /= 2;
-            //movementY /= 2;
-
-            //movementY *= -1;
-            ////////////////////////
-            //if (x > buffernud.Value || x < -buffernud.Value)
-            //{
-            //    Cursor.Position = new Point(Cursor.Position.X + movementX, Cursor.Position.Y);
-            //}
-            //if (y > buffernud.Value || y < -buffernud.Value)
-            //{
-            //    Cursor.Position = new Point(Cursor.Position.X, Cursor.Position.Y + movementY);
-            //}
-            //buttons
             CheckButtons();
         } 
 
@@ -206,58 +174,7 @@ namespace FortniteMapper
                 //Console.WriteLine("DPadRight!");
                 SendKeycode(VK_RIGHT);
             }
-
-            ////a left click
-            //if (stateOld.Gamepad.Buttons == GamepadButtonFlags.LeftShoulder && stateNew.Gamepad.Buttons == GamepadButtonFlags.LeftShoulder)
-            //{
-            //    LeftClick();
-            //}
-
-            ////b right click
-            //if (stateOld.Gamepad.Buttons == GamepadButtonFlags.RightShoulder && stateNew.Gamepad.Buttons == GamepadButtonFlags.RightShoulder)
-            //{
-            //    RightClick();
-            //}
-
-            ////dpad up button sens up
-            //if (stateOld.Gamepad.Buttons == GamepadButtonFlags.DPadUp && stateNew.Gamepad.Buttons == GamepadButtonFlags.DPadUp)
-            //{
-            //    sensnud.UpButton();
-            //}
-
-            ////dpad down button sens down
-            //if (stateOld.Gamepad.Buttons == GamepadButtonFlags.DPadDown && stateNew.Gamepad.Buttons == GamepadButtonFlags.DPadDown)
-            //{
-            //    sensnud.DownButton();
-            //}
             stateOld = stateNew;
         }
-
-        //private void LeftClick()
-        //{
-        //    int X = Cursor.Position.X;
-        //    int Y = Cursor.Position.Y;
-        //    mouse_event(0x02 | 0x04, (uint)X, (uint)Y, 0, 0);
-        //    Thread.Sleep(100);
-        //}
-
-        //private void RightClick()
-        //{
-        //    int X = Cursor.Position.X;
-        //    int Y = Cursor.Position.Y;
-        //    mouse_event(0x08 | 0x10, (uint)X, (uint)Y, 0, 0);
-        //    Thread.Sleep(100);
-        //}
-
-        //private void updateLoop_Tick(object sender, EventArgs e)
-        //{
-        //    xlbl.Text = "Offset X: " + x;
-        //    ylbl.Text = "Offset Y: " + y;
-        //}
-
-        //private void applybtn_Click(object sender, EventArgs e)
-        //{
-        //    loop.Interval = (int)updatenud.Value;
-        //}
     }
 }
