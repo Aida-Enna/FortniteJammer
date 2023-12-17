@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortniteMapper", "FortniteMapper.csproj", "{01A3054F-2E2C-46B5-8B01-37220657210A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01A3054F-2E2C-46B5-8B01-37220657210A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A3054F-2E2C-46B5-8B01-37220657210A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A3054F-2E2C-46B5-8B01-37220657210A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A3054F-2E2C-46B5-8B01-37220657210A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99ABC0C5-33CD-4BB9-8DD6-CC948F2AD67A}
+	EndGlobalSection
+EndGlobal
